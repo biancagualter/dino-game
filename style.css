@@ -1,8 +1,48 @@
+body {
+    background: #fafafa;
+}
+
 .dino {
     width: 60px;
     height: 60px;
-    background-color: #df0e0e;
     position: absolute;
     bottom: 50px;
+    left: 30px;
 } 
+
+.dino img {
+    width: 60px;
+    height: 60px;
+}
      
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    background-image: url('./sprites/cactus.png');
+    background-size: 30px
+}
+
+.game-over { 
+    margin: 350px 550px;
+}
+
+@keyframes slideleft {
+    from {
+        background-position: 0;    
+    }
+    to {
+        background-position: 70000%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 50px;
+    background-image: url('./sprites/background.png');
+    background-repeat: repeat-x;
+    animation: slideleft 3500s infinite linear;
+    width: 100%;
+    height: 200px;
+}
